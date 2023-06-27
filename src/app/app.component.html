@@ -1,1 +1,5 @@
-<i class="fa fa-address-book"></i>
+<app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+<app-body 
+  [collapsed]="isSideNavCollapse" 
+  [screenWidth]="screenWidth">
+</app-body>

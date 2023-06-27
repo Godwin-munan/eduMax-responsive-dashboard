@@ -1,2 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
-// @import 'fontawesome-4.7/css/font-awesome.min.css';
+$backgroundColor: #263238;
+$blackColor: #000;
+$secondaryColor: #8690a3;
+$whiteColor: #fff;
+$linkColor: #f3f3f3;
+$box_shadowColor: #edf1f7;
+$borderColor: #edf1f7;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  background: $whiteColor;
+  margin: 1.25rem 0 1.25rem 0;
+  box-shadow:  0 .25rem .5rem $box_shadowColor;
+
+  .card-head {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid $borderColor;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}

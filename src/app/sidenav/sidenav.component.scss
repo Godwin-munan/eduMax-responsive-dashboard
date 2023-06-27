@@ -1,0 +1,122 @@
+$backgroundColor: #263238;
+$blackColor: #000;
+$secondaryColor: #8690a3;
+$whiteColor: #fff;
+$linkColor: #f3f3f3;
+$first-padding: 0.938rem;
+
+.sidenav {
+  background-color: $backgroundColor;
+  transition: all .5s ease;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 5rem;
+  height: 100svh;
+  box-shadow: .063rem 0 1.25rem 0 $secondaryColor;
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: $first-padding $first-padding 0 $first-padding;
+    width: 100%;
+
+    .logo {
+      background: $whiteColor;
+      text-align: center;
+      width: 3rem;
+      min-width: 3rem;
+      border-radius: 0.313rem;
+      padding: 0.313rem;
+      font-size: 24px;
+      font-weight: 900;
+      cursor: pointer;
+      border: none;
+    }
+
+    .logo-text {
+      margin-left: 1.5rem;
+      font-size: 24px;
+      font-weight: 700;
+      color: $whiteColor;
+    }
+
+    .btn-close {
+      margin-left: auto;
+      cursor: pointer;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background-color: transparent;
+      border: none;
+
+      .fa-times {
+        color: $whiteColor;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .sidenav-nav {
+    list-style: none;
+    padding: $first-padding;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 3.65rem);
+    cursor: pointer;
+  }
+
+  .sidenav-nav-item {
+    width: 100%;
+    margin-bottom: 0.625rem;
+
+    .sidenav-nav-link {
+      display: flex;
+      align-items: center;
+      height: 3rem;
+      color: $linkColor;
+      border-radius: 0.625rem;
+      text-decoration: none;
+      transition: all .3s ease;
+
+      .sidenav-link-icon {
+        font-size: 22px;
+        width: 2rem;
+        min-width: 2rem;
+        margin: 0 0.5rem;
+        text-align: center;
+      }
+
+      .sidenav-link-text {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+  .sidenav-nav-item:hover {
+
+    .sidenav-nav-link {
+      background: $whiteColor;
+      color: $blackColor;
+
+    }
+  }
+}
+
+.active {
+  background: $whiteColor;
+
+  .sidenav-link-icon,
+  .sidenav-link-text {
+    color: $blackColor;
+  }
+}
+
+.sidenav-collapsed {
+  width: 16.5625rem;
+}
+
+
+ 
